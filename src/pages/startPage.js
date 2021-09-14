@@ -1,5 +1,5 @@
-import Header from "./Header";
-import PortfolioPresentation from "./PortfolioPresentation";
+import Header from "../components/Header";
+import PortfolioPresentation from "../components/PortfolioPresentation";
 import "../styles/startpage.css";
 
 const StartPage = () => {

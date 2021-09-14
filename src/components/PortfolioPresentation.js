@@ -1,4 +1,5 @@
 import "../styles/portfoliopresentation.css";
+import renderImg from "./RenderImg";
 
 const PortfolioPresentation = () => {
   return (
@@ -20,6 +21,8 @@ const PortfolioPresentation = () => {
         <div className="portfolio-boxes"></div>
         <div className="portfolio-boxes"></div>
         <div className="portfolio-boxes"></div>
+
+        <div className="testing">{renderImg}</div>
       </section>
     </div>
   );

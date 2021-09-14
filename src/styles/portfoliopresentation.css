@@ -29,14 +29,15 @@
   right: 0;
   height: 100%;
   width: 100%;
-
   background-color: tomato;
 } */
 
 .portfolio-box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 30rem));
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 25rem));
   grid-auto-rows: 1fr;
+  gap: 2rem;
+  justify-content: center; /* Don't know if I want it in the middle */
 }
 
 .portfolio-box-container::before {
@@ -52,33 +53,49 @@
   grid-column: 1 / 1;
 }
 
+/* Make a json-file instead */
 .portfolio-box-container :nth-child(1) {
-  background: url("../assets/bok-webb.png") no-repeat center;
+  background: url("../assets/bok-webb.png") no-repeat center center;
   background-size: cover;
 }
 .portfolio-box-container :nth-child(2) {
-  background: url("../assets/icebear.png") no-repeat center;
+  background: url("../assets/icebear.png") no-repeat center center;
   background-size: cover;
 }
 .portfolio-box-container :nth-child(3) {
-  background: url("../assets/väderapp.png") no-repeat center;
+  background: url("../assets/väderapp.png") no-repeat center center;
   background-size: cover;
 }
 .portfolio-box-container :nth-child(4) {
-  background: url("../assets/bok-webb.png") no-repeat center;
+  background: url("../assets/bok-webb.png") no-repeat center center;
   background-size: cover;
 }
 .portfolio-box-container :nth-child(5) {
-  background: url("../assets/article.png") no-repeat center;
+  background: url("../assets/article.png") no-repeat center center;
   background-size: cover;
 }
 .portfolio-box-container :nth-child(6) {
-  background: url("../assets/cosmoheader.gif") no-repeat center;
+  background: url("../assets/cosmoheader.gif") no-repeat center center;
   background-size: cover;
 }
 
-/* .portfolio-boxes {
-  background: red;
+.portfolio-box-container :hover {
+  cursor: pointer;
+  -webkit-animation: zoom-b 2s linear alternate; /* Safari 4+ */
+  -moz-animation: zoom-b 2s linear alternate; /* Fx 5+ */
+  -o-animation: zoom-b 2s linear alternate; /* Opera 12+ */
+  animation: zoom-b 2s linear alternate; /* IE 10+, Fx 29+ */
+}
 
-  border: black solid 2px;
-} */
+/* KEYFRAMES */
+
+@keyframes zoom-b {
+  0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+  100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
