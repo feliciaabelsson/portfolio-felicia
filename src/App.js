@@ -10,7 +10,7 @@ function App() {
       <GlobalMenu />
       {/* <Header /> */}
       <Switch>
-        <Route exact path="/portfolio-felicia" component={StartPage} />
+        <Route exact path="/" component={StartPage} />
         <Route exact path="/contact" component={contactPage} />
         <Route exact path="/portfolio" component={portfolioPage} />
       </Switch>
