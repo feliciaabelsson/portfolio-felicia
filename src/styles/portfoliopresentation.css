@@ -1,0 +1,101 @@
+.portfolio-starterpage-container {
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  min-height: 500px;
+}
+
+.portfolio-starterpage-container h1 {
+  font-size: 4rem;
+  /* color: #10ffbf; */
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.portfolio-starterpage-container p {
+  color: white;
+  max-width: 700px;
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+} */
+
+.portfolio-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 25rem));
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+  justify-content: center; /* Don't know if I want it in the middle */
+}
+
+.portfolio-box-container::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.portfolio-box-container > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+/* Make a json-file instead */
+.portfolio-box-container :nth-child(1) {
+  background: url("../assets/bok-webb.png") no-repeat center center;
+  background-size: cover;
+}
+.portfolio-box-container :nth-child(2) {
+  background: url("../assets/icebear.png") no-repeat center center;
+  background-size: cover;
+}
+.portfolio-box-container :nth-child(3) {
+  background: url("../assets/väderapp.png") no-repeat center center;
+  background-size: cover;
+}
+.portfolio-box-container :nth-child(4) {
+  background: url("../assets/bok-webb.png") no-repeat center center;
+  background-size: cover;
+}
+.portfolio-box-container :nth-child(5) {
+  background: url("../assets/article.png") no-repeat center center;
+  background-size: cover;
+}
+.portfolio-box-container :nth-child(6) {
+  background: url("../assets/cosmoheader.gif") no-repeat center center;
+  background-size: cover;
+}
+
+.portfolio-box-container :hover {
+  cursor: pointer;
+  -webkit-animation: zoom-b 2s linear alternate; /* Safari 4+ */
+  -moz-animation: zoom-b 2s linear alternate; /* Fx 5+ */
+  -o-animation: zoom-b 2s linear alternate; /* Opera 12+ */
+  animation: zoom-b 2s linear alternate; /* IE 10+, Fx 29+ */
+}
+
+/* KEYFRAMES */
+
+@keyframes zoom-b {
+  0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+  100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
