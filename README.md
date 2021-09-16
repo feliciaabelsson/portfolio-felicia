@@ -1,3 +1,0 @@
-# portfolio-felicia
-
-## React app
