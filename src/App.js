@@ -3,6 +3,7 @@ import StartPage from "./pages/startPage";
 import GlobalMenu from "./components/GlobalMenu";
 import contactPage from "./pages/contactPage";
 import portfolioPage from "./pages/portfolioPage";
+import "./styles/styles.css"
 
 function App() {
   return (

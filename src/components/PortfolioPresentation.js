@@ -3,7 +3,8 @@ import renderImg from "./RenderImg";
 
 const PortfolioPresentation = () => {
   return (
-    <div className="portfolio-starterpage-container">
+    <div className="portfolio-starterpage-container main-container">
+      <div className="container-padding">
       <h1>Min portfolio</h1>
       <p>
         Här presenterar jag min portfolio och presenterar mig själv. Detta är
@@ -11,6 +12,7 @@ const PortfolioPresentation = () => {
         minim esse cupidatat do id exercitation esse. Amet duis Lorem dolore
         exercitation et. Dolore in esse adipisicing laboris officia veniam
       </p>
+      </div>
 
       <section className="portfolio-box-container">
         <div classNAme="overlay">
